@@ -36,7 +36,7 @@
             <EditText
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:hint="e.g) 한국디지털미디어고등학교"
+                android:hint="e.g) 선린인터넷고등학교"
                 android:id="@+id/et_su_school_input"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/btn_su_submit"
