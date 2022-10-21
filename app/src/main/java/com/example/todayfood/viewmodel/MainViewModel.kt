@@ -7,6 +7,8 @@ public class MainViewModel:ViewModel(){
     lateinit var mySchoolName: LiveData<String>
     lateinit var foodList : LiveData<String>
 
+
+
     fun goToSchoolUpdateActivity(v: View) {
 
     }
