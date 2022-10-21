@@ -40,7 +40,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                android:fontFamily="@font/NanumGothic"
+                android:fontFamily="@font/nanumgothic"
                 android:layout_margin="10dp"
                 android:onClick="@{viewModel::goToSchoolUpdateActivity}"/>
 
@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="오늘의 급식"
-            android:fontFamily="@font/NanumGothic"
+            android:fontFamily="@font/nanumgothic"
             android:textStyle="bold"
             android:id="@+id/tv_main_title"
             android:textSize="25sp"
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/NanumGothic"
+            android:fontFamily="@font/nanumgothic"
             android:id="@+id/tv_main_food_list"
             android:text="@{viewModel.foodList}"
             app:layout_constraintStart_toStartOf="parent"
