@@ -35,7 +35,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{viewModel.mySchoolName}"
+                android:text="@={viewModel.mySchoolName}"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -58,6 +58,7 @@
             android:textSize="25sp"
             android:layout_margin="10dp"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/cl_main_top"/>
 
         <TextView
@@ -65,8 +66,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/nanumgothic"
             android:id="@+id/tv_main_food_list"
-            android:text="@{viewModel.foodList}"
+            android:text="@={viewModel.foodList}"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_main_title"
             android:layout_margin="10dp"/>
 

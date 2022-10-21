@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.todayfood.repository.sf.SharedPreferences
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -12,8 +13,14 @@ class SplashActivity : AppCompatActivity() {
 
         val handler = Handler()
         handler.postDelayed({
-            startActivity(Intent(application, MainActivity::class.java))
-            this@SplashActivity.finish()
+//            if(SharedPreferences.prefs.getString("SchoolID","00") == "00") {
+//                startActivity(Intent(application, SchoolUpdateActivity::class.java))
+//                this@SplashActivity.finish()
+//            } else {
+                startActivity(Intent(application, MainActivity::class.java))
+                this@SplashActivity.finish()
+            //}
+
         }, 3000)
 
     }

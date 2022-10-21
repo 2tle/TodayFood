@@ -49,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:text="검색"
                 android:id="@+id/btn_su_submit"
+                android:onClick="@{() -> viewModel.query(etSuSchoolInput.getText().toString())}"
                 android:backgroundTint="@color/main"
                 app:layout_constraintStart_toEndOf="@id/et_su_school_input"
                 app:layout_constraintEnd_toEndOf="parent"
