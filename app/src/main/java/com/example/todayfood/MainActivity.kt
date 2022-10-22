@@ -6,6 +6,7 @@ import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.todayfood.databinding.ActivityMainBinding
 import com.example.todayfood.viewmodel.MainViewModel
+import com.google.android.gms.ads.MobileAds
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         viewModel = MainViewModel()
         binding.viewModel = viewModel
+
+        MobileAds.initialize(this) {}
 
 
         attachSingleLiveEvent()

@@ -24,10 +24,13 @@ public class MainViewModel:ViewModel(){
                 NeisApi.getApiService().getMealData(officeCode = SharedPreferences.prefs.getString("OfficeID","0"), schoolCode = SharedPreferences.prefs.getString("SchoolID","0"), date = LocalDate.now().toString().replace("-",""))
             }
             Log.d(">>>",SharedPreferences.prefs.getString("OfficeID","0") + SharedPreferences.prefs.getString("SchoolID","0"),)
-            if(!res.isSuccessful) {
-                //ex
+            if(res.body()!!.mealServiceDietInfo != null) {
+                foodList.value = res.body()!!.mealServiceDietInfo[1].row[0].DDISH_NM.replace("<br>","\n").replace("<br/>","\n")
+            } else {
+                foodList.value = "급식 없음";
             }
-            foodList.value = res.body()!!.mealServiceDietInfo[1].row[0].DDISH_NM.replace("<br>","\n").replace("<br/>","\n")
+
+
         }
 
 

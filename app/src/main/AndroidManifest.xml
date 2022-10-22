@@ -17,6 +17,11 @@
         android:theme="@style/Theme.TodayFood"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-4890007597542726~4924588925"/>
+
+
         <activity
             android:name=".SchoolUpdateActivity"
             android:exported="false">
