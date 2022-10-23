@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import com.example.todayfood.databinding.ActivityMainBinding
 import com.example.todayfood.viewmodel.MainViewModel
 import com.google.android.gms.ads.MobileAds
@@ -14,7 +15,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        viewModel = MainViewModel()
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         binding.viewModel = viewModel
 
         MobileAds.initialize(this) {}

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProvider
 import com.example.todayfood.adapter.SchoolSearchRecyclerAdapter
 import com.example.todayfood.databinding.ActivitySchoolUpdateBinding
 import com.example.todayfood.model.search.Row
@@ -15,7 +16,7 @@ class SchoolUpdateActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_school_update)
-        viewModel = SchoolUpdateViewModel()
+        viewModel = ViewModelProvider(this).get(SchoolUpdateViewModel::class.java)
         binding.viewModel = viewModel
 
         attachEvent()
