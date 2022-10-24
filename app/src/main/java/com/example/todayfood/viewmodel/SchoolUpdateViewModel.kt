@@ -25,10 +25,17 @@ class SchoolUpdateViewModel : ViewModel() {
         if(!res.isSuccessful) {
             requestFailEvent.call()
         }
-        if(res.body() == null) {
+        else if(res.body() == null) {
             requestFailEvent.call()
         }
-        schoolList.value = res.body()!!.schoolInfo[1].row
+        else {
+            try {
+                schoolList.value = res.body()!!.schoolInfo[1].row
+            } catch(e: Exception) {
+                requestFailEvent.call()
+            }
+
+        }
 
         //Log.d(">",res.body()!!.schoolInfo[1].row[0].SCHUL_NM)
     }

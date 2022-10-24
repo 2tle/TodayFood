@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "937646137883",
+    "project_id": "todayfood-138d6",
+    "storage_bucket": "todayfood-138d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937646137883:android:17b872d188f1fcdfd80ebe",
+        "android_client_info": {
+          "package_name": "com.example.todayfood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937646137883-9ggt7na1alu1uabl4hccm4jjgm1npagi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzKPntMP2S6EcqDU7386GY0UAJMqM4R3Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937646137883-9ggt7na1alu1uabl4hccm4jjgm1npagi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

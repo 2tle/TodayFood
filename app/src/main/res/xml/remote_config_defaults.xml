@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaults>
+  <entry>
+    <key>is_update</key>
+    <value>false</value>
+  </entry>
+  <entry>
+    <key>notice</key>
+    <value>기본 공지사항 입니다</value>
+  </entry>
+</defaults>
