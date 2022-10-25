@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.todayfood.viewmodel.SchoolUpdateViewModel" />
+            type="io.twotle.todayfood.viewmodel.SchoolUpdateViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout

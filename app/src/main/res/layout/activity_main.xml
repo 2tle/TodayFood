@@ -6,13 +6,13 @@
     <data>
         <variable
             name="viewModel"
-            type="com.example.todayfood.viewmodel.MainViewModel" />
+            type="io.twotle.todayfood.viewmodel.MainViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context="io.twotle.todayfood.MainActivity">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"

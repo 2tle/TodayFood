@@ -6,7 +6,7 @@
 
 
     <application
-        android:name="com.example.todayfood.repository.sf.SharedPreferences"
+        android:name="io.twotle.todayfood.repository.sf.SharedPreferences"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -43,7 +43,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="io.twotle.todayfood.MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

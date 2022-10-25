@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:937646137883:android:17b872d188f1fcdfd80ebe",
         "android_client_info": {
-          "package_name": "com.example.todayfood"
+          "package_name": "io.twotle.todayfood"
         }
       },
       "oauth_client": [
